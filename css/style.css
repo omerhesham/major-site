@@ -2267,6 +2267,7 @@ a {
     opacity: .6;
     transition: var(--mainTransition);
     transform: translateX(calc(100% + 20px));
+    z-index: 99;
 }
 .to-top.active {
     transform: translateX(0);
