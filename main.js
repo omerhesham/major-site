@@ -550,6 +550,13 @@ video.oncontextmenu = function (e) {
     e.preventDefault()
 }
 
+let int = setInterval(() => {
+    if (isNaN(myVideo.duration) === false) {
+        setTargetDuration()
+        clearInterval(int)
+    }
+}, 1);
+
 window.onload = function () {
     setTargetDuration()
 }
